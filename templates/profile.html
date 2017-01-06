@@ -1,0 +1,19 @@
+{% include "header.html" %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Pak's Secret</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}"/>
+</head>
+<body>
+<h1>Hey there {{ name }}</h1>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/npm.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+</html>
+
+{% endblock %}
